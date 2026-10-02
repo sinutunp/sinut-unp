@@ -249,7 +249,7 @@ header.header-with-flag {
   align-items: center;
   justify-content: center;
   background:
-    linear-gradient(rgba(11, 37, 69, 0.75), rgba(13, 27, 42, 0.85)),
+    linear-gradient(rgba(11, 37, 69, 0.3), rgba(13, 27, 42, 0.4)),
     url("../assets/img/fondo.png") center/cover no-repeat; /* <-- Ruta relativa desde css/ */
   padding-top: 90px;
   text-align: center;
@@ -266,7 +266,7 @@ header.header-with-flag {
   background: radial-gradient(
     circle at center,
     transparent 0%,
-    rgba(0, 0, 0, 0.6) 100%
+    rgba(0, 0, 0, 0.3) 100%
   );
 }
 
