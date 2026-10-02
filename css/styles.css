@@ -250,7 +250,7 @@ header.header-with-flag {
   justify-content: center;
   background:
     linear-gradient(rgba(11, 37, 69, 0.75), rgba(13, 27, 42, 0.85)),
-    url("../assets/img/aaty.jpg") center/cover no-repeat; /* <-- Ruta relativa desde css/ */
+    url("../assets/img/fondo.png") center/cover no-repeat; /* <-- Ruta relativa desde css/ */
   padding-top: 90px;
   text-align: center;
   color: #ffffff;
