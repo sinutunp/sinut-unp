@@ -51,3 +51,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+function toggleRadio() {
+  const audio = document.getElementById("radioPlayer");
+  const btn = document.getElementById("playBtn");
+
+  if (audio.paused) {
+    audio.play();
+    btn.innerHTML = '<i class="fa-solid fa-pause"></i> PAUSAR';
+  } else {
+    audio.pause();
+    btn.innerHTML = '<i class="fa-solid fa-play"></i> ESCUCHAR EN VIVO';
+  }
+}
