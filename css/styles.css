@@ -838,40 +838,40 @@ header.header-with-flag {
   padding: 100px 0;
   background: #f8f9fa;
 }
-
-/* 1. Convertir la sección en un contenedor de 2 columnas (Izquierda y Derecha) */
-.contact-section .container,
-.contact-section {
+/* Corrección exacta para contact-grid y contact-form */
+.contact-grid {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
   align-items: flex-start !important;
   gap: 40px !important;
+  width: 100% !important;
 }
 
-/* 2. Reducir el tamaño del formulario y empujarlo totalmente a la DERECHA */
-.contact-section form,
-.contact-section .formulario,
-.contact-section fieldset {
+/* Reducir y alinear el formulario a la derecha */
+.contact-form {
   max-width: 420px !important;
   width: 100% !important;
   margin-left: auto !important;
   margin-right: 0 !important;
   padding: 25px !important;
+  background: #ffffff !important;
+  border-radius: 12px !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* 3. Hacer los campos del formulario más compactos */
-.contact-section input[type="text"],
-.contact-section input[type="email"],
-.contact-section input[type="tel"],
-.contact-section textarea {
+/* Hacer los campos del formulario más pequeños y elegantes */
+.contact-form .form-control {
   padding: 8px 12px !important;
   font-size: 14px !important;
 }
 
-.contact-section textarea {
+.contact-form textarea.form-control {
   height: 90px !important;
+}
+
+.contact-form .form-group {
+  margin-bottom: 12px !important;
 }
 
 .contact-section textarea {
