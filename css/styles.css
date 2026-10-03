@@ -839,21 +839,39 @@ header.header-with-flag {
   background: #f8f9fa;
 }
 
-/* Estilos para reducir y alinear el formulario a la derecha */
-.contact-section form,
-.contact-section .formulario {
-  max-width: 420px !important;
-  margin-left: auto !important;
-  margin-right: 0 !important;
-  padding: 20px !important;
+/* 1. Convertir la sección en un contenedor de 2 columnas (Izquierda y Derecha) */
+.contact-section .container,
+.contact-section {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 40px !important;
 }
 
+/* 2. Reducir el tamaño del formulario y empujarlo totalmente a la DERECHA */
+.contact-section form,
+.contact-section .formulario,
+.contact-section fieldset {
+  max-width: 420px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  padding: 25px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 3. Hacer los campos del formulario más compactos */
 .contact-section input[type="text"],
 .contact-section input[type="email"],
 .contact-section input[type="tel"],
 .contact-section textarea {
   padding: 8px 12px !important;
   font-size: 14px !important;
+}
+
+.contact-section textarea {
+  height: 90px !important;
 }
 
 .contact-section textarea {
