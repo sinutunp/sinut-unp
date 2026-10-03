@@ -605,30 +605,33 @@ header.header-with-flag {
   font-weight: 300;
 }
 
-/* Estilos para adaptar las imágenes de las redes sociales */
-.social-links .social-icon {
-  display: inline-flex;
-  justify-content: center;
+/* Ajusta el tamaño de la caja/círculo donde está el icono */
+.redes-sociales a,
+.redes-sociales .icono-container {
+  width: 50px !important; /* Ancho del círculo */
+  height: 50px !important; /* Alto del círculo */
+  line-height: 50px !important; /* Centrado vertical si es texto/fuente */
+  display: inline-flex !important;
   align-items: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  overflow: hidden;
+  justify-content: center;
 }
 
-.social-links .social-icon img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
+/* Ajusta el tamaño del icono o fuente dentro del círculo */
+.redes-sociales i,
+.redes-sociales svg,
+.redes-sociales img {
+  font-size: 24px !important; /* Para iconos tipo FontAwesome o fuentes */
+  width: 24px !important; /* Para iconos tipo SVG o imágenes PNG */
+  height: 24px !important;
 }
-*
+/*
   ==========================================================================
   SECCIÓN
   RADIO
   DIGITAL
   ==========================================================================
   */
-  .radio-section {
+.radio-section {
   padding: 80px 0;
   background: #ffffff;
 }
