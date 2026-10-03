@@ -605,10 +605,30 @@ header.header-with-flag {
   font-weight: 300;
 }
 
-/* ==========================================================================
-   SECCIÓN RADIO DIGITAL
-   ========================================================================== */
-.radio-section {
+/* Estilos para adaptar las imágenes de las redes sociales */
+.social-links .social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.social-links .social-icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+*
+  ==========================================================================
+  SECCIÓN
+  RADIO
+  DIGITAL
+  ==========================================================================
+  */
+  .radio-section {
   padding: 80px 0;
   background: #ffffff;
 }
