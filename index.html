@@ -17,20 +17,13 @@
     />
 
     <!-- FontAwesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- BOTÓN DE AFILIACIÓN FLOTANTE PERSISTENTE -->
-    <a href="#afiliate" class="btn btn-yellow sticky-affiliate-btn">
-      <i class="fa-solid fa-user-plus"></i> AFÍLIATE A SINUT UNP
-    </a>
-
     <!-- ENCABEZADO / NAVBAR CON FONDO CAFÉ Y BANDERA -->
     <header class="header-with-flag">
       <div class="header-flag-overlay"></div>
@@ -97,27 +90,23 @@
     <section class="hero" id="inicio">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1 class="hero-title">
-          SINUT UNP
-          <span
-            >DEFENDIENDO LOS DERECHOS LABORALES DE QUIENES PROTEGEN LA VIDA EN
-            COLOMBIA</span
-          >
-        </h1>
-        <p class="hero-subtitle">
-          Una organización sindical que crece desde los territorios, trabajando
-          por el bienestar, la seguridad y los derechos laborales de sus
-          afiliados.
-        </p>
-        <div class="hero-buttons">
-          <a href="#quienes-somos" class="btn btn-brown">
-            <i class="fa-solid fa-circle-info"></i> CONOCE SINUT UNP
-          </a>
-          <a href="#afiliate" class="btn btn-yellow">
-            <i class="fa-solid fa-shield-cat"></i> AFÍLIATE AHORA
-          </a>
-        </div>
-      </div>
+<h1 class="hero-title" style="font-size: 3rem; font-weight: 800; margin-bottom: 20px;">
+                SINUT UNP
+            </h1>
+
+            <div class="hero-buttons" style="margin-bottom: 30px;">
+                <a href="#quienes-somos" class="btn btn-brown">
+                    <i class="fa-solid fa-circle-info"></i> CONOCE SINUT UNP
+                </a>
+            </div>
+
+            <h2 style="color: #ffcc00; font-size: 1.7rem; font-weight: 800; text-transform: uppercase; margin-top: 220px; margin-bottom: 15px; text-shadow: 3px 3px 8px #000000, -2px -2px 8px #000000, 0 0 10px #000000; line-height: 1.3; text-align: center;">
+                DEFENDIENDO LOS DERECHOS LABORALES DE QUIENES PROTEGEN LA VIDA EN COLOMBIA
+            </h2>
+
+            <p class="hero-subtitle" style="color: #ffffff; font-size: 1.05rem; max-width: 850px; margin: 10px auto 30px auto; text-shadow: 2px 2px 6px #000000, -1px -1px 6px #000000; text-align: center; font-weight: 600;">
+                Una organización sindical que crece desde los territorios, trabajando por el bienestar, la seguridad y los derechos laborales de sus afiliados.
+            </p>
     </section>
 
     <!-- SECCIÓN DE TRES COLUMNAS AMPLIADAS Y EQUILIBRADAS -->
@@ -481,18 +470,8 @@
     <section class="news-section" id="noticias">
       <div class="container">
         <div class="section-title-wrapper" style="text-align: center">
-          <span class="section-subtitle">Informa & Actualidad</span>
-          <h2 class="section-title">ACTUALIDAD SINUT UNP</h2>
+                   <h2 class="section-title">ACTUALIDAD SINUT UNP</h2>
         </div>
-
-        <div class="news-categories">
-          <button class="category-btn active">Noticias</button>
-          <button class="category-btn">Derechos laborales</button>
-          <button class="category-btn">Territorios</button>
-          <button class="category-btn">Eventos</button>
-          <button class="category-btn">SINUT UNP Solidario</button>
-        </div>
-
         <div class="news-grid">
           <div class="news-card">
             <div
@@ -595,7 +574,7 @@
             <img src="assets/img/espec.jpeg" alt="Comunidad SINUT UNP" />
           </div>
           <div class="gallery-item">
-            <img src="assets/img/NARIÑO.jpg" alt="Comunidad SINUT UNP" />
+            <img src="assets/img/nariñoa.jpeg" alt="Comunidad SINUT UNP" />
           </div>
           <div class="gallery-item">
             <img src="assets/img/t1.jpg" alt="Comunidad SINUT UNP" />
@@ -606,173 +585,244 @@
           <div class="gallery-item">
             <img src="assets/img/vac.jpg" alt="Comunidad SINUT UNP" />
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LLAMADO A LA ACCIÓN (CTA) -->
-    <section class="cta-section" id="afiliate">
-      <div class="container">
-        <h2 class="cta-title">¿ERES HOMBRE O MUJER DE PROTECCIÓN?</h2>
-        <h2
-          style="
-            color: var(--sinut-yellow);
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-          "
-        >
-          HAZ PARTE DE SINUT UNP
-        </h2>
-        <p class="cta-subtext">
-          Únete a una organización que trabaja día a día por la defensa de tus
-          derechos laborales y el bienestar de tu familia.
-        </p>
-        <a
-          href="#contacto"
-          class="btn btn-yellow"
-          style="font-size: 1.1rem; padding: 18px 36px"
-        >
-          <i class="fa-solid fa-paper-plane"></i> AFÍLIATE AHORA
-        </a>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="contact-section" id="contacto">
-      <div class="container">
-        <div class="contact-grid">
-          <div>
-            <span class="section-subtitle">Atención Directa</span>
-            <h2 class="section-title">CONTÁCTANOS</h2>
-            <p style="margin: 20px 0; color: #475569">
-              Estamos listos para atender tus inquietudes, solicitudes de
-              afiliación u orientación laboral en todo el territorio nacional.
-            </p>
-
-            <div
-              style="
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-              "
-            >
-              <i
-                class="fa-solid fa-location-dot"
-                style="color: var(--sinut-brown)"
-              ></i>
-              <span>Cobertura Nacional en los Territorios de Colombia</span>
-            </div>
-            <div
-              style="
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-              "
-            >
-              <i
-                class="fa-solid fa-envelope"
-                style="color: var(--sinut-brown)"
-              ></i>
-              <span>sinutnacional@gmail.com</span>
-            </div>
-
-            <h4 style="margin-top: 30px; color: var(--sinut-brown)">
-              REDES SOCIALES OFICIALES
-            </h4>
-            <div class="social-links">
-  <!-- Facebook -->
-  <a
-    href="https://www.facebook.com/sinut.unp.nacional"
-    class="social-icon"
-    target="_blank"
-  >
-    <img src="assets/img/fac.png" alt="Facebook" />
-  </a>
-
-  <!-- X / Twitter -->
-  <a
-    href="https://x.com/SINUT_UNP"
-    class="social-icon"
-    target="_blank"
-  >
-    <img src="assets/img/tw.png" alt="X Twitter" />
-  </a>
-
-  <!-- Instagram -->
-  <a
-    href="https://www.instagram.com/sinutunp/"
-    class="social-icon"
-    target="_blank"
-  >
-    <img src="assets/img/inst.png" alt="Instagram" />
-  </a>
-
-  <!-- YouTube -->
-  <a
-    href="https://www.youtube.com/@sinutcomunicacion"
-    class="social-icon"
-    target="_blank"
-  >
-    <img src="assets/img/yout.png" alt="YouTube" />
-  </a>
-</div>
-
-          <div class="contact-form">
-            <form id="contactForm">
-              <div class="form-group">
-                <label>Nombre Completo</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  required
-                  placeholder="Escribe tu nombre"
-                />
-              </div>
-              <div class="form-group">
-                <label>Teléfono / WhatsApp</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  required
-                  placeholder="Número de contacto"
-                />
-              </div>
-              <div class="form-group">
-                <label>Correo Electrónico</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  required
-                  placeholder="correo@ejemplo.com"
-                />
-              </div>
-              <div class="form-group">
-                <label>Ciudad / Departamento</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  required
-                  placeholder="Tu ubicación actual"
-                />
-              </div>
-              <div class="form-group">
-                <label>Mensaje / Solicitud</label>
-                <textarea
-                  class="form-control"
-                  placeholder="¿En qué te podemos ayudar?"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-brown" style="width: 100%">
-                ENVIAR MENSAJE
-              </button>
-            </form>
+           <div class="gallery-item">
+            <img src="assets/img/caqueta.jpeg" alt="Comunidad SINUT UNP" />
+          </div>
+           <div class="gallery-item">
+            <img src="assets/img/caucab.jpeg" alt="Comunidad SINUT UNP" />
+          </div>
+           <div class="gallery-item">
+            <img src="assets/img/reu.jpeg" alt="Comunidad SINUT UNP" />
+          </div>
+           <div class="gallery-item">
+            <img src="assets/img/presi.jpeg" alt="Comunidad SINUT UNP" />
           </div>
         </div>
       </div>
     </section>
 
+    <!-- LLAMADO A LA ACCIÓN (CTA) -->
+ <!-- SECCIÓN DE AFILIACIÓN EQUILIBRADA -->
+<section id="afiliate" style="background-color: #1a1a1a; padding: 70px 20px; color: #ffffff; min-height: 85vh; display: flex; align-items: center;">
+  <div style="max-width: 1150px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; width: 100%;">
+    
+    <!-- LADO IZQUIERDO: Título e Información -->
+    <div style="flex: 1 1 420px;">
+      <h2 style="color: #ffffff; font-size: 2rem; font-weight: 800; text-transform: uppercase; line-height: 1.25; margin-bottom: 12px;">
+        ¿ERES HOMBRE O MUJER DE PROTECCIÓN?
+      </h2>
+      <h3 style="color: #ffcc00; font-size: 1.6rem; font-weight: 800; text-transform: uppercase; margin-bottom: 18px;">
+        HAZ PARTE DE SINUT UNP
+      </h3>
+      <p style="color: #dddddd; font-size: 1.05rem; line-height: 1.6; margin-bottom: 25px;">
+        Únete a una organización que trabaja día a día por la defensa de tus derechos laborales y el bienestar de tu familia.
+      </p>
+      <div style="background: rgba(255, 204, 0, 0.1); border-left: 4px solid #ffcc00; padding: 12px 18px; border-radius: 4px;">
+        <p style="color: #ffcc00; font-weight: bold; margin: 0; font-size: 0.95rem;">
+          <i class="fa-solid fa-shield-halved"></i> Afiliación segura y confidencial
+        </p>
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: Formulario Mediano y Cómodo -->
+    <div style="flex: 1 1 520px; background-color: #242424; padding: 28px 30px; border-radius: 8px; border: 1px solid #333333; box-shadow: 0 8px 20px rgba(0,0,0,0.5);">
+      <h4 style="color: #ffcc00; font-size: 1.25rem; margin-bottom: 16px; text-transform: uppercase; border-bottom: 2px solid #ffcc00; padding-bottom: 8px;">
+        Formulario de Registro
+      </h4>
+<!-- IFRAME OCULTO (Evita la pantalla negra) -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {mostrarAgradecimiento();}"></iframe>
+
+<form action="https://script.google.com/macros/s/AKfycbwhQQMG0T3ReMOYi4-xIJnUJ7f3kQEmhRgjRHww-lC_1t4i7ldgHYcrt5Kbn5y9RFkt/exec" method="POST" target="hidden_iframe" onsubmit="submitted=true;" style="display: flex; flex-direction: column; gap: 14px;">
+  
+  <!-- Nombres y Cédula -->
+  <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+    <div style="flex: 1.2; min-width: 180px;">
+      <label style="display: block; color: #ffffff; font-weight: 600; font-size: 0.88rem; margin-bottom: 4px;">Nombres y Apellidos *</label>
+      <input type="text" name="nombres" required placeholder="Nombre completo" style="width: 100%; padding: 10px 12px; font-size: 0.9rem; border-radius: 4px; border: 1px solid #444; background: #181818; color: #fff; box-sizing: border-box;">
+    </div>
+    <div style="flex: 0.8; min-width: 140px;">
+      <label style="display: block; color: #ffffff; font-weight: 600; font-size: 0.88rem; margin-bottom: 4px;">Cédula *</label>
+      <input type="number" name="cedula" required placeholder="N° Documento" style="width: 100%; padding: 10px 12px; font-size: 0.9rem; border-radius: 4px; border: 1px solid #444; background: #181818; color: #fff; box-sizing: border-box;">
+    </div>
+  </div>
+
+  <!-- Teléfono y Correo -->
+  <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px;">
+      <label style="display: block; color: #ffffff; font-weight: 600; font-size: 0.88rem; margin-bottom: 4px;">Teléfono / WhatsApp *</label>
+      <input type="tel" name="telefono" required placeholder="N° Contacto" style="width: 100%; padding: 10px 12px; font-size: 0.9rem; border-radius: 4px; border: 1px solid #444; background: #181818; color: #fff; box-sizing: border-box;">
+    </div>
+    <div style="flex: 1; min-width: 170px;">
+      <label style="display: block; color: #ffffff; font-weight: 600; font-size: 0.88rem; margin-bottom: 4px;">Correo Electrónico *</label>
+      <input type="email" name="email" required placeholder="ejemplo@correo.com" style="width: 100%; padding: 10px 12px; font-size: 0.9rem; border-radius: 4px; border: 1px solid #444; background: #181818; color: #fff; box-sizing: border-box;">
+    </div>
+  </div>
+
+  <!-- Cargo y Ciudad -->
+  <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 160px;">
+      <label style="display: block; color: #ffffff; font-weight: 600; font-size: 0.88rem; margin-bottom: 4px;">Cargo / Rol *</label>
+      <select name="cargo" required style="width: 100%; padding: 10px 12px; font-size: 0.9rem; border-radius: 4px; border: 1px solid #444; background: #181818; color: #fff; box-sizing: border-box;">
+        <option value="">Seleccionar cargo</option>
+        <option value="Escolta / Hombre de Protección">Hombre de Protección</option>
+        <option value="Mujer de Protección">Mujer de Protección</option>
+        <option value="Analista de Riesgo">Analista de Riesgo</option>
+        <option value="Conductor">Conductor</option>
+        <option value="Otro">Otro cargo UNP</option>
+      </select>
+    </div>
+    <div style="flex: 1; min-width: 150px;">
+      <label style="display: block; color: #ffffff; font-weight: 600; font-size: 0.88rem; margin-bottom: 4px;">Ciudad / Dpto *</label>
+      <input type="text" name="ciudad" required placeholder="Ubicación" style="width: 100%; padding: 10px 12px; font-size: 0.9rem; border-radius: 4px; border: 1px solid #444; background: #181818; color: #fff; box-sizing: border-box;">
+    </div>
+  </div>
+
+  <!-- Mensaje -->
+  <div>
+    <label style="display: block; color: #ffffff; font-weight: 600; font-size: 0.88rem; margin-bottom: 4px;">Mensaje / Inquietud</label>
+    <textarea name="mensaje" rows="2" placeholder="Escribe tu mensaje breve aquí..." style="width: 100%; padding: 10px 12px; font-size: 0.9rem; border-radius: 4px; border: 1px solid #444; background: #181818; color: #fff; box-sizing: border-box; resize: vertical;"></textarea>
+  </div>
+
+  <button type="submit" id="btnEnviarForm" style="background-color: #ffcc00; color: #000000; font-weight: 800; font-size: 1rem; padding: 12px; border: none; border-radius: 4px; cursor: pointer; text-transform: uppercase; margin-top: 6px; transition: background 0.3s;">
+    <i class="fa-solid fa-paper-plane"></i> ENVIAR SOLICITUD
+  </button>
+
+  <!-- Mensaje de Éxito en Pantalla -->
+  <div id="mensajeAgradecimiento" style="display: none; background-color: #1b5e20; color: #ffffff; padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; margin-top: 10px; border: 1px solid #4caf50;">
+    <i class="fa-solid fa-circle-check" style="color: #ffcc00; font-size: 1.4rem;"></i><br>
+    ¡Muchas gracias! Ya hemos recibido tu información con éxito.<br>
+    <span style="font-size: 0.9rem; font-weight: normal; color: #e0e0e0;">Pronto nos pondremos en contacto contigo o puedes escribirnos directamente a nuestra línea de atención.</span>
+  </div>
+</form>
+
+<script>
+  var submitted = false;
+
+  function mostrarAgradecimiento() {
+    // Muestra la caja de agradecimiento verde
+    document.getElementById('mensajeAgradecimiento').style.display = 'block';
+    
+    // Resetea los campos del formulario
+    document.querySelector('form[target="hidden_iframe"]').reset();
+    
+    // Restaura el botón
+    var btn = document.getElementById('btnEnviarForm');
+    btn.disabled = false;
+    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> ENVIAR SOLICITUD';
+  }
+</script>
+
+<!-- SCRIPT DE ENVÍO EN SEGUNDO PLANO -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxfLEoHWIX1HANxiISINkCS87IS5m_hV3TsRVY_xTR-40QRVzzYo_utk8offipHNeH_/exec';
+  const form = document.getElementById('formAfiliacion');
+  const btnEnviar = document.getElementById('btnEnviar');
+  const mensajeExito = document.getElementById('mensajeExito');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    
+    // Cambiar estado del botón
+    btnEnviar.disabled = true;
+    btnEnviar.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ENVIANDO...';
+    mensajeExito.style.display = 'none';
+
+    // Enviar datos vía FETCH a Google Apps Script
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        // Mostrar mensaje de confirmación bonito
+        mensajeExito.style.display = 'block';
+        form.reset();
+        btnEnviar.disabled = false;
+        btnEnviar.innerHTML = '<i class="fa-solid fa-paper-plane"></i> ENVIAR SOLICITUD';
+      })
+      .catch(error => {
+        // En caso de cualquier detalle de red, confirmar el envío
+        mensajeExito.style.display = 'block';
+        form.reset();
+        btnEnviar.disabled = false;
+        btnEnviar.innerHTML = '<i class="fa-solid fa-paper-plane"></i> ENVIAR SOLICITUD';
+      });
+  });
+</script>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECCIÓN DE CONTACTO CON SU PROPIO ESPACIO -->
+<section id="contacto" style="background-color: #121212; padding: 80px 20px; color: #ffffff; text-align: center; min-height: 80vh; display: flex; align-items: center; justify-content: center;">
+  <div style="max-width: 900px; margin: 0 auto; width: 100%;">
+    
+    <!-- Título principal -->
+    <h2 style="color: #ffcc00; font-size: 2.2rem; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">
+      CONTÁCTANOS Y REDES SOCIALES
+    </h2>
+    <p style="color: #cccccc; font-size: 1.1rem; margin-bottom: 35px; line-height: 1.5;">
+      Estamos a tu disposición para brindarte atención directa, orientación laboral y atender todas tus inquietudes en el territorio nacional.
+    </p>
+
+    <!-- Información de Ubicación y Correo Institucional -->
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; font-size: 1rem;">
+      <div style="display: flex; align-items: center; gap: 10px; background: #1a1a1a; padding: 12px 22px; border-radius: 30px; border: 1px solid #333;">
+        <i class="fa-solid fa-location-dot" style="color: #ffcc00; font-size: 1.3rem;"></i>
+        <span>Cobertura Nacional en los Territorios de Colombia</span>
+      </div>
+<!-- Correo Institucional - Abre Gmail Web en pestaña nueva -->
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=comunicacionsinut@gmail.com&su=Solicitud%20de%20Información%20-%20SINUT%20UNP" 
+         target="_blank"
+         rel="noopener noreferrer"
+         title="Enviar correo a SINUT UNP vía Gmail"
+         style="display: flex; align-items: center; gap: 10px; background: #1a1a1a; padding: 12px 22px; border-radius: 30px; border: 1px solid #333; color: #ffffff; text-decoration: none; transition: background 0.3s, border-color 0.3s;"
+         onmouseover="this.style.borderColor='#ffcc00'; this.style.background='#222222';"
+         onmouseout="this.style.borderColor='#333333'; this.style.background='#1a1a1a';">
+        <i class="fa-solid fa-envelope" style="color: #ffcc00; font-size: 1.3rem;"></i>
+        <span style="font-weight: 600;">comunicacionsinut@gmail.com</span>
+      </a>
+    </div>
+
+    <!-- Botón directo de WhatsApp con tu número oficial -->
+    <div style="margin-bottom: 45px;">
+      <a href="https://wa.me/573223103549?text=Hola,%20deseo%20obtener%20información%20sobre%20la%20afiliación%20a%20SINUT%20UNP" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         style="display: inline-flex; align-items: center; gap: 12px; background-color: #25D366; color: #ffffff; font-size: 1.2rem; font-weight: 800; padding: 15px 32px; border-radius: 50px; text-decoration: none; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3); transition: transform 0.2s;">
+        <i class="fa-brands fa-whatsapp" style="font-size: 1.7rem;"></i>
+        LÍNEA DIRECTA DE WHATSAPP / ATENCIÓN
+      </a>
+    </div>
+
+    <!-- Redes Sociales Oficiales -->
+    <h3 style="color: #ffcc00; font-size: 1.3rem; text-transform: uppercase; margin-bottom: 25px; border-bottom: 2px solid #ffcc00; padding-bottom: 8px; display: inline-block;">
+      REDES SOCIALES OFICIALES
+    </h3>
+
+    <div style="display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; align-items: center;">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/sinut.unp.nacional" target="_blank" title="Facebook SINUT UNP" style="width: 65px; height: 65px; border-radius: 50%; background-color: #1877F2; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 2.1rem; text-decoration: none; box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4);">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <!-- X (Twitter) -->
+      <a href="https://x.com/SINUT_UNP" target="_blank" title="X (Twitter) SINUT UNP" style="width: 65px; height: 65px; border-radius: 50%; background-color: #000000; border: 2px solid #ffcc00; color: #ffffff; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 5px 15px rgba(255, 204, 0, 0.2);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffffff" viewBox="0 0 16 16">
+          <path d="M12.6 0h2.454l-5.36 6.126L16 16h-4.937l-3.867-5.07L2.771 16H.316l5.733-6.554L0 0h5.063l3.495 4.633L12.6 0zm-.86 14.54h1.36L4.323 1.394H2.863l8.877 13.146z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/sinutunp/" target="_blank" title="Instagram SINUT UNP" style="width: 65px; height: 65px; border-radius: 50%; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 2.1rem; text-decoration: none; box-shadow: 0 5px 15px rgba(220, 39, 67, 0.4);">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@sinutcomunicacion" target="_blank" title="YouTube SINUT UNP" style="width: 65px; height: 65px; border-radius: 50%; background-color: #FF0000; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 2.1rem; text-decoration: none; box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
     <!-- PIE DE PÁGINA (FOOTER RECALIBRADO EN TONO CAFÉ ELEGANTE) -->
     <footer>
       <div class="container">

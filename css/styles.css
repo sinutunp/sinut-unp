@@ -164,6 +164,7 @@ header.header-with-flag {
   );
   backdrop-filter: blur(10px);
   border-bottom: 3px solid var(--sinut-yellow);
+  z-index: 1000;
 }
 
 .header-flag-overlay {
@@ -173,7 +174,7 @@ header.header-with-flag {
   width: 100%;
   height: 100%;
   opacity: 0.15;
-  background-image: url("https://images.unsplash.com/photo-1579389083078-4e7018379f7e?auto=format&fit=crop&w=1920&q=80");
+  background-image: url("../assets/bandera.png");
   background-size: cover;
   background-position: center;
   pointer-events: none;
@@ -186,6 +187,8 @@ header.header-with-flag {
   padding: 12px 25px;
   position: relative;
   z-index: 2;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .official-logo-box {
@@ -584,8 +587,7 @@ header.header-with-flag {
   padding: 100px 0;
   background:
     linear-gradient(rgba(44, 20, 8, 0.88), rgba(44, 20, 8, 0.88)),
-    url("https://images.unsplash.com/photo-1511497584788-876761011935?auto=format&fit=crop&w=1920&q=80")
-      center/cover fixed;
+    url("../assets/img/slioder\ \(4\).png") center/cover fixed;
   color: #ffffff;
   text-align: center;
 }
@@ -811,27 +813,27 @@ header.header-with-flag {
 /* ==========================================================================
    CALL TO ACTION Y CONTACTO
    ========================================================================== */
+/* Sección del formulario con fondo amarillo claro SINUT UNP */
 .cta-section {
   padding: 100px 0;
-  background:
-    linear-gradient(rgba(44, 20, 8, 0.92), rgba(44, 20, 8, 0.92)),
-    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1920&q=80")
-      center/cover;
-  color: #ffffff;
+  background-color: #fff8d6 !important; /* Amarillo muy claro/suave */
+  background-image: none !important; /* Quita la imagen oscura de fondo */
+  color: #1a1a1a !important; /* Texto oscuro para buena lectura */
   text-align: center;
-  border-top: 4px solid var(--sinut-yellow);
-  border-bottom: 4px solid var(--sinut-yellow);
+  border-top: 4px solid #ffcb00; /* Borde superior amarillo corporativo */
+  border-bottom: 4px solid #ffcb00; /* Borde inferior amarillo corporativo */
 }
 
+/* Título principal en la sección */
+.cta-section h2,
 .cta-title {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  color: #1a1a1a !important; /* Título en color negro/gris oscuro */
 }
 
+/* Subtexto o párrafo descriptivo */
+.cta-section p,
 .cta-subtext {
-  font-size: 1.2rem;
-  color: #e2e8f0;
-  margin-bottom: 35px;
+  color: #333333 !important; /* Texto en gris oscuro */
 }
 
 .contact-section {
