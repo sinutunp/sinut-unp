@@ -174,7 +174,7 @@ header.header-with-flag {
   width: 100%;
   height: 100%;
   opacity: 0.15;
-  background-image: url("../assets/bandera.png");
+  background-image: url("../assets/img/header.png");
   background-size: cover;
   background-position: center;
   pointer-events: none;
@@ -184,20 +184,22 @@ header.header-with-flag {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 25px;
+  padding: 10px 25px;
   position: relative;
   z-index: 2;
-  max-width: 1300px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
 .official-logo-box {
   background-color: var(--sinut-dark-brown);
-  padding: 6px 14px;
+  padding: 4px 18px;
   border-radius: 6px;
   border: 1.5px solid var(--sinut-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .nav-menu {
   display: flex;
   list-style: none;
