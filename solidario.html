@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SINUT UNP SOLIDARIO - Galería de Eventos Sociales</title>
+    <!-- Hojas de estilo del proyecto -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        background-color: #0d0d0d;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header-espacio {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .btn-volver-atras {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background-color: var(--sinut-yellow, #ffc107);
+        color: #000;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 20px 0;
+        transition: all 0.3s ease;
+      }
+
+      .btn-volver-atras:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+      }
+
+      .contenedor-galeria {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px 60px 20px;
+      }
+
+      .titulo-galeria {
+        color: var(--sinut-yellow, #ffc107);
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .subtitulo-galeria {
+        color: #cccccc;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .grid-videos-contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+      }
+
+      .tarjeta-video-item {
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        padding: 15px;
+        border: 1px solid #2a2a2a;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .tarjeta-video-item video {
+        width: 100%;
+        height: 200px;
+        border-radius: 6px;
+        object-fit: cover;
+        background-color: #000;
+      }
+
+      .info-video-item h3 {
+        color: #ffffff;
+        font-size: 1.1rem;
+        margin: 15px 0 5px 0;
+      }
+
+      .info-video-item p {
+        color: #aaaaaa;
+        font-size: 0.9rem;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-espacio">
+      <a href="index.html" class="btn-volver-atras">
+        <i class="fa-solid fa-arrow-left"></i> Volver al Inicio
+      </a>
+      <h1 class="titulo-galeria">GALERÍA DE EVENTOS SOLIDARIOS</h1>
+      <p class="subtitulo-galeria">
+        Respaldo, ayuda humanitaria y apoyo a nuestra comunidad en momentos de
+        calamidad.
+      </p>
+    </div>
+
+    <main class="contenedor-galeria">
+      <div class="grid-videos-contenedor">
+        <!-- Video 1: Apoyo Terremoto -->
+        <div class="tarjeta-video-item">
+          <video controls preload="metadata">
+            <source src="assets/videos/SOLIDARIO.mp4" type="video/mp4" />
+            Tu navegador no soporta el reproductor de video.
+          </video>
+          <div class="info-video-item">
+            <h3>1. Ayuda en Emergencia y Terremoto</h3>
+            <p>
+              Entrega de ayudas y acompañamiento a los afectados por el sismo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 2: Apoyo en Salud -->
+        <div class="tarjeta-video-item">
+          <video controls preload="metadata">
+            <source src="assets/videos/so.mp4" type="video/mp4" />
+            Tu navegador no soporta el reproductor de video.
+          </video>
+          <div class="info-video-item">
+            <h3>2. Apoyo por Calamidad y Salud</h3>
+            <p>
+              Jornadas de solidaridad y respaldo a familias y compañeros con
+              problemas de salud.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 3: Evento Comunitario -->
+        <div class="tarjeta-video-item">
+          <video controls preload="metadata">
+            <source src="assets/videos/PROFUNDA.mp4" type="video/mp4" />
+            Tu navegador no soporta el reproductor de video.
+          </video>
+          <div class="info-video-item">
+            <h3>3. Compromiso y Gestión Social</h3>
+            <p>
+              Actividades de bienestar e integración comunitaria en el
+              territorio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
