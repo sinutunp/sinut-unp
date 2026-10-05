@@ -193,12 +193,21 @@ header.header-with-flag {
 
 .official-logo-box {
   background-color: var(--sinut-dark-brown);
-  padding: 4px 18px;
+  padding: 6px 14px;
   border-radius: 6px;
   border: 1.5px solid var(--sinut-yellow);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.logo-text {
+  color: var(--sinut-yellow);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  text-transform: uppercase;
 }
 .nav-menu {
   display: flex;
