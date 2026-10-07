@@ -871,6 +871,23 @@ summary.btn-brown:hover {
     color: #333;
     border-left: 3px solid #5A3825;
 }
+/* Control de contenedor de tarjetas de noticias */
+.news-card {
+  width: 100%;
+  max-width: 380px; /* Ancho máximo para cada tarjeta */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Fuerza a las imágenes a adaptarse a la tarjeta sin deformarse */
+.news-card img {
+  width: 100%;
+  height: 220px; /* Altura uniforme para las 3 noticias */
+  object-fit: cover; /* Ajusta la imagen sin recortar ni estirar feo */
+  display: block;
+}
 
 /* ==========================================================================
    GALERÍA FAMILIA SINUT UNP
