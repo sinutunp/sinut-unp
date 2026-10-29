@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video del Día | SINUT UNP</title>
+    
+    <!-- Enlace al Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png" />
+    
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <style>
+        /* Estilos específicos para la sección del Video Diario */
+        .seccion-video-diario {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: rgba(16, 36, 66, 0.85);
+            border: 1px solid rgba(0, 180, 216, 0.4);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .seccion-video-diario h1 {
+            color: #48cae4;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .seccion-video-diario p {
+            color: #e2e8f0;
+            margin-bottom: 25px;
+        }
+
+        /* Contenedor Responsivo 16:9 para Video MP4 Local */
+        .contenedor-video-local {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .contenedor-video-local video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            object-fit: contain;
+        }
+
+        .btn-regresar {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #00b4d8;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn-regresar:hover {
+            background-color: #0077b6;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="seccion-video-diario">
+        <h1>Video del Día</h1>
+        <p>A continuación se presenta la información y comunicado en video del día de hoy:</p>
+
+        <!-- Contenedor del Reproductor de Video Local -->
+        <div class="contenedor-video-local">
+            <!-- Reproductor HTML5 apuntando a la carpeta assets/videos/ -->
+            <video controls poster="./assets/img/logo.png">
+                <source src="./assets/videos/vid.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video reproducido.
+            </video>
+        </div>
+
+        <!-- Botón para regresar al inicio -->
+        <a href="./index.html" class="btn-regresar">← Volver al Inicio</a>
+    </main>
+
+</body>
+</html>
