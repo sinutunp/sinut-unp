@@ -8,83 +8,116 @@
     <!-- Enlace al Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png" />
     
-    <!-- Hoja de estilos principal -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Hoja de estilos principal del proyecto -->
+    <link rel="stylesheet" href="./css/styles.css?v=2.0">
 
     <style>
-        /* Estilos específicos para la sección del Video Diario */
-        .seccion-video-diario {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
-            background-color: rgba(16, 36, 66, 0.85);
-            border: 1px solid rgba(0, 180, 216, 0.4);
-            border-radius: 12px;
+        /* ==========================================
+           ESTILOS PÁGINA VIDEO DIARIO (AMPLIADA Y AMARILLO CLARO)
+           ========================================== */
+        body {
+            background-color: #fff8e1; /* Fondo amarillo claro institucional */
+            color: #2b1704;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contenedor-video-page {
+            width: 95%;
+            max-width: 1400px; /* Mucho más ancha para cubrir gran parte de la pantalla */
+            margin: 20px auto;
+            padding: 40px 30px;
+            background-color: rgba(43, 23, 4, 0.9); /* Tarjeta contenedora café elegante */
+            border: 2px solid #ffcc00;
+            border-radius: 20px;
             text-align: center;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
         }
 
-        .seccion-video-diario h1 {
-            color: #48cae4;
-            font-size: 2rem;
+        .contenedor-video-page h1 {
+            color: #ffcc00;
+            font-size: 3rem;
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.8);
         }
 
-        .seccion-video-diario p {
-            color: #e2e8f0;
-            margin-bottom: 25px;
+        .contenedor-video-page .subtitulo {
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            font-weight: 500;
         }
 
-        /* Contenedor Responsivo 16:9 para Video MP4 Local */
-        .contenedor-video-local {
+        /* REPRODUCTOR DE VIDEO HORIZONTAL 16:9 AMPLIADO */
+        .contenedor-video-horizontal {
             position: relative;
-            padding-bottom: 56.25%;
+            width: 100%;
+            padding-bottom: 56.25%; /* Relación de aspecto panorámica 16:9 */
             height: 0;
             overflow: hidden;
-            border-radius: 10px;
-            background-color: #000;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 14px;
+            background-color: #000000;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(255, 204, 0, 0.4);
+            margin-bottom: 35px;
         }
 
-        .contenedor-video-local video {
+        .contenedor-video-horizontal video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             border: 0;
-            object-fit: contain;
+            object-fit: contain; /* Conserva todo el video completo sin deformar ni recortar */
         }
 
+        /* BOTÓN DE RETORNO AL INICIO (CAFÉ CON TEXTO BLANCO/AMARILLO) */
         .btn-regresar {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background-color: #00b4d8;
-            color: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            padding: 16px 30px;
+            background-color: #3b1e08; /* Color café corporativo */
+            color: #ffcc00; /* Texto amarillo claro corporativo */
+            font-weight: 900;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background 0.3s ease;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid #ffcc00;
         }
 
         .btn-regresar:hover {
-            background-color: #0077b6;
+            background-color: #ffcc00;
+            color: #2b1704;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
 
-    <main class="seccion-video-diario">
+    <main class="contenedor-video-page">
         <h1>Video del Día</h1>
-        <p>A continuación se presenta el video del día: <br>
-            Portegemos sus derechos</p>
+        <p class="subtitulo">¡Hoy es un gran día para seguir adelante! <br>
+Con unidad, compromiso y valentía seguimos nuestra lucha por la defensa de los derechos laborales de los hombres y mujeres de protección.
+¡Juntos somos más fuertes! ¡SINUT UNP, siempre firme en la lucha!</p>
 
-        <!-- Contenedor del Reproductor de Video Local -->
-        <div class="contenedor-video-local">
-            <!-- Reproductor HTML5 apuntando a la carpeta assets/videos/ -->
+        <!-- Contenedor del reproductor de video horizontal (16:9) ampliado -->
+        <div class="contenedor-video-horizontal">
             <video controls poster="./assets/img/logo.png">
-                <source src="./assets/videos/prot.mp4" type="video/mp4">
+                <source src="./assets/videos/dere.mp4" type="video/mp4">
                 Tu navegador no soporta el formato de video reproducido.
             </video>
         </div>
